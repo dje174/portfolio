@@ -1,11 +1,12 @@
 @import "compass";
 @import "colors";
+@import "compass/reset";
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
   margin : 0; padding : 0; border : 0; outline : 0; font-size : 100%; vertical-align : baseline; background : transparent; }
 
 html{
-background: url('../img/triangular.png');
+background: url('../img/brushed.png');
 }
 
 body {
@@ -28,6 +29,13 @@ body {
 		width: 960px;
 		height: 293px;
 	}
+	h3 {
+		color: $grisBleu;
+		font-family:"Lato Light", "Franklin Gothic Book";
+		font-size: 25px;
+		margin-bottom: 20px;
+		margin-left: 20px;
+	}
 }
 
 /* BARRE DE NAVIGATION */
@@ -35,6 +43,7 @@ body {
 nav#menu {
 	margin-top: 40px;
 	background-color: $grisBleu;
+	@include single-box-shadow;
 	ul {
 		padding-left: 600px;
 	}
@@ -63,36 +72,31 @@ nav#menu {
 	}
 }
 
-nav#menu:after {
-	content: "";
-	display: block;
-	clear: both;
-}
-
 /* SECTION PRINCIPALE */
 
 section#main {
 	margin: 30px auto;
-	width: 960px;
-	background-color: rgba(151, 151, 151, 0.5);
+	width: 1000px;
+	background-color: rgba(220, 220, 220, 1);
 	h2 {
 		font-family:"Lato Light", "Franklin Gothic Book";
 		font-size: 25px;
-		margin-top: 40px;
+		margin: 40px 0 25px 0;
 		color: white;
 		background-color: $grisBleu;
-		width: 90%;
-		line-height: 80px;
+		width: 98%;
+		line-height: 60px;
 		@include single-box-shadow;
 		padding-left: 20px;
 	}
 	li {
-		padding: 5px 35px;
-		margin: 25px 19px;
+		padding: 5px 0;
+		margin: 25px 19px 0 19px;
+		width: 21%;
 		display: inline;
-		color: white;
+		color: $grisBleu;
 		float: left;
-		@include border-radius(25px);
+		@include border-radius(20px);
 		font-size: 18px;
 	}
 	.color1 {
@@ -109,29 +113,15 @@ section#main {
 	}
 	article.propos {
 	margin-top: 40px;
-	font-size: 20px;	
-		h3 {
-			color: white;
-			font-family:"Lato Light", "Franklin Gothic Book";
-			font-size: 25px;
-			margin-bottom: 30px;
-			margin-left: 20px;
-		}
-		p{
-			text-indent: 5%;
-			font-size: 20px;
-		}
+	font-size: 20px;
 	}
 	
+	p{
+		margin-left: 20px;
+		font-size: 20px;
+	}
 	p.accueil{
 		margin-top: 30px;
-		padding-left: 26px;
-	}
-	img {
-		float: left;
-		margin-left: 10px;
-		margin-top: 10px;
-		@include single-box-shadow;
 	}
 	.adjust{
 		visibility: hidden;
@@ -149,42 +139,45 @@ section#main {
             box-shadow: none;
 		}
 	}
-	article.box {
-		width: auto;
-		height: auto;
+	figure {
+		margin-left: 20px;
+		margin-top: 20px;
+		@include single-box-shadow;
+	}	
+	figure.box {
 		overflow: hidden;
 		position: relative;
-		p {
+		figcaption {
 			position: absolute;
 			bottom:0;
-			top:0;
 			left:0;
-			right:0;
-			margin-bottom: -50px;
+			margin-bottom: -60px;
+			background-color: rgba(1,1,1,0.7);
+			color: white;
+			@include transition(margin-bottom 0.3s ease-in, color 0.35s ease-out);
 		}
 	}
-	article.box:hover p {
+	figure.box:hover figcaption {
 		margin-bottom: 0;
 	}
+	figure.big {
+		width: 460px;
+		height: 310px;
+	}
+	figure.little {
+		width: 230px;
+		height: 145px;
+	}
+	figure{
+		float: left;
+	}
 
-}
-
-section#main ul:after {
-	content: "";
-	display: block;
-	clear: both;
-}
-
-section#main:after {
-	content: "";
-	display: block;
-	clear: both;
 }
 
 section#projet {
 	margin: 30px auto;
 	width: 960px;
-	background-color: rgba(151, 151, 151, 0.5);
+	background-color: rgba(220, 220, 220, 1);
 	position: relative;
 	h2 {
 		font-family:"Lato Light", "Franklin Gothic Book";
@@ -192,8 +185,8 @@ section#projet {
 		margin-top: 40px;
 		color: white;
 		background-color: $grisBleu;
-		width: 90%;
-		line-height: 80px;
+		width: 98%;
+		line-height: 60px;
 		@include single-box-shadow;
 		padding-left: 20px;
 	}
@@ -202,13 +195,13 @@ section#projet {
 		margin-left: 20px;
 		font-size: 20px;
 		h3 {
-			color: white;
+			color: $grisBleu;
 			font-family:"Lato Light", "Franklin Gothic Book";
 			font-size: 25px;
 			margin-bottom: 30px;
 		}
 		p {
-			text-indent: 5%;
+			margin-bottom: 20px;
 		}
 	}
 	article.right{
@@ -222,28 +215,16 @@ section#projet {
 	}
 	.img1{
 		float: right;
-		margin: 40px 20px 0 40px;
+		margin: 65px 20px 0 40px;
 	}
 	.img2{
 		float: left;
-		margin: 40px 20px 40px 0;
+		margin: 65px 20px 40px 0;
 	}
 }
 
-article.left:after,article.right:after,section#projet:after {
+article.left:after,article.right:after,section#projet:after,section#main:after,section#main div:after, section#main ul:after,section#main:after,nav#menu:after {
 	content: "";
 	display: block;
 	clear: both;
-}
-
-/*FOOTER */
-
-footer {
-	background-color: $grisBleu;
-	#face:hover{
-		background: url('../img/facebookHoover.png');
-	}
-	#linked:hover{
-		background: url('../img/linkedinHoover.png');
-	}
 }

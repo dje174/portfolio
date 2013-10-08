@@ -1,4 +1,165 @@
-/* line 4, ../scss/screen.scss */
+/* line 17, ../../../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+
+ol,
+ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+
+q,
+blockquote {
+  quotes: none;
+}
+
+/* line 103, ../../../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 5, ../scss/screen.scss */
 
 html,
 body,
@@ -71,13 +232,13 @@ td {
   background: transparent;
 }
 
-/* line 7, ../scss/screen.scss */
+/* line 8, ../scss/screen.scss */
 
 html {
-  background: url("../img/triangular.png");
+  background: url("../img/brushed.png");
 }
 
-/* line 11, ../scss/screen.scss */
+/* line 12, ../scss/screen.scss */
 
 body {
   width: 100%;
@@ -85,7 +246,7 @@ body {
   position: relative;
 }
 
-/* line 15, ../scss/screen.scss */
+/* line 16, ../scss/screen.scss */
 
 body h1:first-child {
   background: url(../img/logosmall.PNG);
@@ -98,7 +259,7 @@ body h1:first-child {
   left: 137px;
 }
 
-/* line 25, ../scss/screen.scss */
+/* line 26, ../scss/screen.scss */
 
 body section#trombino img {
   margin: 0 auto;
@@ -107,22 +268,34 @@ body section#trombino img {
   height: 293px;
 }
 
+/* line 32, ../scss/screen.scss */
+
+body h3 {
+  color: #3b444c;
+  font-family: "Lato Light", "Franklin Gothic Book";
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
 /* BARRE DE NAVIGATION */
 
-/* line 35, ../scss/screen.scss */
+/* line 43, ../scss/screen.scss */
 
 nav#menu {
   margin-top: 40px;
   background-color: #3b444c;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
 }
 
-/* line 38, ../scss/screen.scss */
+/* line 47, ../scss/screen.scss */
 
 nav#menu ul {
   padding-left: 600px;
 }
 
-/* line 41, ../scss/screen.scss */
+/* line 50, ../scss/screen.scss */
 
 nav#menu li {
   display: inline;
@@ -131,7 +304,7 @@ nav#menu li {
   text-align: center;
 }
 
-/* line 47, ../scss/screen.scss */
+/* line 56, ../scss/screen.scss */
 
 nav#menu a {
   text-decoration: none;
@@ -141,7 +314,7 @@ nav#menu a {
   padding: 22px;
 }
 
-/* line 53, ../scss/screen.scss */
+/* line 62, ../scss/screen.scss */
 
 nav#menu a span {
   font-size: 12px;
@@ -150,72 +323,65 @@ nav#menu a span {
   font-family: "Gotham";
 }
 
-/* line 60, ../scss/screen.scss */
+/* line 69, ../scss/screen.scss */
 
 nav#menu a:hover {
   color: white;
   background-color: #ff9600;
 }
 
-/* line 66, ../scss/screen.scss */
-
-nav#menu:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 /* SECTION PRINCIPALE */
 
-/* line 74, ../scss/screen.scss */
+/* line 77, ../scss/screen.scss */
 
 section#main {
   margin: 30px auto;
-  width: 960px;
-  background-color: rgba(151, 151, 151, 0.5);
+  width: 1000px;
+  background-color: gainsboro;
 }
 
-/* line 78, ../scss/screen.scss */
+/* line 81, ../scss/screen.scss */
 
 section#main h2 {
   font-family: "Lato Light", "Franklin Gothic Book";
   font-size: 25px;
-  margin-top: 40px;
+  margin: 40px 0 25px 0;
   color: white;
   background-color: #3b444c;
-  width: 90%;
-  line-height: 80px;
+  width: 98%;
+  line-height: 60px;
   -webkit-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
   padding-left: 20px;
 }
 
-/* line 89, ../scss/screen.scss */
+/* line 92, ../scss/screen.scss */
 
 section#main li {
-  padding: 5px 35px;
-  margin: 25px 19px;
+  padding: 5px 0;
+  margin: 25px 19px 0 19px;
+  width: 21%;
   display: inline;
-  color: white;
+  color: #3b444c;
   float: left;
-  -o-border-radius: 25px;
-  border-radius: 25px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
   font-size: 18px;
 }
 
-/* line 98, ../scss/screen.scss */
+/* line 102, ../scss/screen.scss */
 
 section#main .color1 {
   background-color: rgba(255, 150, 0, 0.7);
 }
 
-/* line 101, ../scss/screen.scss */
+/* line 105, ../scss/screen.scss */
 
 section#main .color2 {
   background-color: #969696;
 }
 
-/* line 104, ../scss/screen.scss */
+/* line 108, ../scss/screen.scss */
 
 section#main span {
   display: block;
@@ -224,68 +390,47 @@ section#main span {
   padding: 30px;
 }
 
-/* line 110, ../scss/screen.scss */
+/* line 114, ../scss/screen.scss */
 
 section#main article.propos {
   margin-top: 40px;
   font-size: 20px;
 }
 
-/* line 113, ../scss/screen.scss */
+/* line 119, ../scss/screen.scss */
 
-section#main article.propos h3 {
-  color: white;
-  font-family: "Lato Light", "Franklin Gothic Book";
-  font-size: 25px;
-  margin-bottom: 30px;
+section#main p {
   margin-left: 20px;
-}
-
-/* line 120, ../scss/screen.scss */
-
-section#main article.propos p {
-  text-indent: 5%;
   font-size: 20px;
 }
 
-/* line 126, ../scss/screen.scss */
+/* line 123, ../scss/screen.scss */
 
 section#main p.accueil {
   margin-top: 30px;
-  padding-left: 26px;
 }
 
-/* line 130, ../scss/screen.scss */
-
-section#main img {
-  float: left;
-  margin-left: 10px;
-  margin-top: 10px;
-  -webkit-box-shadow: 0px 0px 5px #333333;
-  box-shadow: 0px 0px 5px #333333;
-}
-
-/* line 136, ../scss/screen.scss */
+/* line 126, ../scss/screen.scss */
 
 section#main .adjust {
   visibility: hidden;
 }
 
-/* line 139, ../scss/screen.scss */
+/* line 129, ../scss/screen.scss */
 
 section#main li.contact {
   width: 200px;
   float: left;
 }
 
-/* line 142, ../scss/screen.scss */
+/* line 132, ../scss/screen.scss */
 
 section#main li.contact p {
   display: block;
   clear: both;
 }
 
-/* line 146, ../scss/screen.scss */
+/* line 136, ../scss/screen.scss */
 
 section#main li.contact img {
   position: relative;
@@ -294,58 +439,71 @@ section#main li.contact img {
   box-shadow: none;
 }
 
-/* line 152, ../scss/screen.scss */
+/* line 142, ../scss/screen.scss */
 
-section#main article.box {
-  width: auto;
-  height: auto;
+section#main figure {
+  margin-left: 20px;
+  margin-top: 20px;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+}
+
+/* line 147, ../scss/screen.scss */
+
+section#main figure.box {
   overflow: hidden;
   position: relative;
 }
 
-/* line 157, ../scss/screen.scss */
+/* line 150, ../scss/screen.scss */
 
-section#main article.box p {
+section#main figure.box figcaption {
   position: absolute;
   bottom: 0;
-  top: 0px;
   left: 0;
-  right: 0;
-  margin-bottom: -50px;
+  margin-bottom: -60px;
+  background-color: rgba(1, 1, 1, 0.7);
+  color: white;
+  -webkit-transition: margin-bottom 0.3s ease-in, color 0.35s ease-out;
+  transition: margin-bottom 0.3s ease-in, color 0.35s ease-out;
 }
 
-/* line 166, ../scss/screen.scss */
+/* line 160, ../scss/screen.scss */
 
-section#main article.box:hover p {
+section#main figure.box:hover figcaption {
   margin-bottom: 0;
 }
 
-/* line 172, ../scss/screen.scss */
+/* line 163, ../scss/screen.scss */
 
-section#main ul:after {
-  content: "";
-  display: block;
-  clear: both;
+section#main figure.big {
+  width: 460px;
+  height: 310px;
 }
 
-/* line 178, ../scss/screen.scss */
+/* line 167, ../scss/screen.scss */
 
-section#main:after {
-  content: "";
-  display: block;
-  clear: both;
+section#main figure.little {
+  width: 230px;
+  height: 145px;
 }
 
-/* line 184, ../scss/screen.scss */
+/* line 171, ../scss/screen.scss */
+
+section#main figure {
+  float: left;
+}
+
+/* line 177, ../scss/screen.scss */
 
 section#projet {
   margin: 30px auto;
   width: 960px;
-  background-color: rgba(151, 151, 151, 0.5);
+  background-color: gainsboro;
   position: relative;
 }
 
-/* line 189, ../scss/screen.scss */
+/* line 182, ../scss/screen.scss */
 
 section#projet h2 {
   font-family: "Lato Light", "Franklin Gothic Book";
@@ -353,14 +511,14 @@ section#projet h2 {
   margin-top: 40px;
   color: white;
   background-color: #3b444c;
-  width: 90%;
-  line-height: 80px;
+  width: 98%;
+  line-height: 60px;
   -webkit-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
   padding-left: 20px;
 }
 
-/* line 200, ../scss/screen.scss */
+/* line 193, ../scss/screen.scss */
 
 section#projet article.left,
 section#projet article.right {
@@ -369,24 +527,24 @@ section#projet article.right {
   font-size: 20px;
 }
 
-/* line 204, ../scss/screen.scss */
+/* line 197, ../scss/screen.scss */
 
 section#projet article.left h3,
 section#projet article.right h3 {
-  color: white;
+  color: #3b444c;
   font-family: "Lato Light", "Franklin Gothic Book";
   font-size: 25px;
   margin-bottom: 30px;
 }
 
-/* line 210, ../scss/screen.scss */
+/* line 203, ../scss/screen.scss */
 
 section#projet article.left p,
 section#projet article.right p {
-  text-indent: 5%;
+  margin-bottom: 20px;
 }
 
-/* line 214, ../scss/screen.scss */
+/* line 207, ../scss/screen.scss */
 
 section#projet article.right {
   float: right;
@@ -394,54 +552,39 @@ section#projet article.right {
   margin-right: 20px;
 }
 
-/* line 220, ../scss/screen.scss */
+/* line 213, ../scss/screen.scss */
 
 section#projet img {
   -webkit-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
 }
 
-/* line 223, ../scss/screen.scss */
+/* line 216, ../scss/screen.scss */
 
 section#projet .img1 {
   float: right;
-  margin: 40px 20px 0 40px;
+  margin: 65px 20px 0 40px;
 }
 
-/* line 227, ../scss/screen.scss */
+/* line 220, ../scss/screen.scss */
 
 section#projet .img2 {
   float: left;
-  margin: 40px 20px 40px 0;
+  margin: 65px 20px 40px 0;
 }
 
-/* line 233, ../scss/screen.scss */
+/* line 226, ../scss/screen.scss */
 
 article.left:after,
 section#projet article.right:after,
 article.right:after,
-section#projet:after {
+section#projet:after,
+section#main:after,
+section#main div:after,
+section#main ul:after,
+section#main:after,
+nav#menu:after {
   content: "";
   display: block;
   clear: both;
-}
-
-/*FOOTER */
-
-/* line 241, ../scss/screen.scss */
-
-footer {
-  background-color: #3b444c;
-}
-
-/* line 243, ../scss/screen.scss */
-
-footer #face:hover {
-  background: url("../img/facebookHoover.png");
-}
-
-/* line 246, ../scss/screen.scss */
-
-footer #linked:hover {
-  background: url("../img/linkedinHoover.png");
 }
