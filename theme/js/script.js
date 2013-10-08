@@ -14,7 +14,7 @@
 	"use strict";
 
 	var iTrombiDelay = 2000,
-	$trombiPhotos,
+	$trombiPhotos
 
 	var trombinext = function(){
 		var $current, $next;
