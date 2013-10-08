@@ -151,10 +151,11 @@ section#main {
 			position: absolute;
 			bottom:0;
 			left:0;
-			margin-bottom: -60px;
+			margin-bottom: -100px;
 			background-color: rgba(1,1,1,0.7);
 			color: white;
-			@include transition(margin-bottom 0.3s ease-in, color 0.35s ease-out);
+			padding: 10px;
+			@include transition(margin-bottom 0.3s ease-in, color 0.5s ease-out);
 		}
 	}
 	figure.box:hover figcaption {

@@ -461,40 +461,41 @@ section#main figure.box figcaption {
   position: absolute;
   bottom: 0;
   left: 0;
-  margin-bottom: -60px;
+  margin-bottom: -100px;
   background-color: rgba(1, 1, 1, 0.7);
   color: white;
-  -webkit-transition: margin-bottom 0.3s ease-in, color 0.35s ease-out;
-  transition: margin-bottom 0.3s ease-in, color 0.35s ease-out;
+  padding: 10px;
+  -webkit-transition: margin-bottom 0.3s ease-in, color 0.5s ease-out;
+  transition: margin-bottom 0.3s ease-in, color 0.5s ease-out;
 }
 
-/* line 160, ../scss/screen.scss */
+/* line 161, ../scss/screen.scss */
 
 section#main figure.box:hover figcaption {
   margin-bottom: 0;
 }
 
-/* line 163, ../scss/screen.scss */
+/* line 164, ../scss/screen.scss */
 
 section#main figure.big {
   width: 460px;
   height: 310px;
 }
 
-/* line 167, ../scss/screen.scss */
+/* line 168, ../scss/screen.scss */
 
 section#main figure.little {
   width: 230px;
   height: 145px;
 }
 
-/* line 171, ../scss/screen.scss */
+/* line 172, ../scss/screen.scss */
 
 section#main figure {
   float: left;
 }
 
-/* line 177, ../scss/screen.scss */
+/* line 178, ../scss/screen.scss */
 
 section#projet {
   margin: 30px auto;
@@ -503,7 +504,7 @@ section#projet {
   position: relative;
 }
 
-/* line 182, ../scss/screen.scss */
+/* line 183, ../scss/screen.scss */
 
 section#projet h2 {
   font-family: "Lato Light", "Franklin Gothic Book";
@@ -518,7 +519,7 @@ section#projet h2 {
   padding-left: 20px;
 }
 
-/* line 193, ../scss/screen.scss */
+/* line 194, ../scss/screen.scss */
 
 section#projet article.left,
 section#projet article.right {
@@ -527,7 +528,7 @@ section#projet article.right {
   font-size: 20px;
 }
 
-/* line 197, ../scss/screen.scss */
+/* line 198, ../scss/screen.scss */
 
 section#projet article.left h3,
 section#projet article.right h3 {
@@ -537,14 +538,14 @@ section#projet article.right h3 {
   margin-bottom: 30px;
 }
 
-/* line 203, ../scss/screen.scss */
+/* line 204, ../scss/screen.scss */
 
 section#projet article.left p,
 section#projet article.right p {
   margin-bottom: 20px;
 }
 
-/* line 207, ../scss/screen.scss */
+/* line 208, ../scss/screen.scss */
 
 section#projet article.right {
   float: right;
@@ -552,28 +553,28 @@ section#projet article.right {
   margin-right: 20px;
 }
 
-/* line 213, ../scss/screen.scss */
+/* line 214, ../scss/screen.scss */
 
 section#projet img {
   -webkit-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
 }
 
-/* line 216, ../scss/screen.scss */
+/* line 217, ../scss/screen.scss */
 
 section#projet .img1 {
   float: right;
   margin: 65px 20px 0 40px;
 }
 
-/* line 220, ../scss/screen.scss */
+/* line 221, ../scss/screen.scss */
 
 section#projet .img2 {
   float: left;
   margin: 65px 20px 40px 0;
 }
 
-/* line 226, ../scss/screen.scss */
+/* line 227, ../scss/screen.scss */
 
 article.left:after,
 section#projet article.right:after,
