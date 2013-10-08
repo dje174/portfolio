@@ -1,0 +1,447 @@
+/* line 4, ../scss/screen.scss */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 7, ../scss/screen.scss */
+
+html {
+  background: url("../img/triangular.png");
+}
+
+/* line 11, ../scss/screen.scss */
+
+body {
+  width: 100%;
+  font-family: "Lato", "Arial", sans-serif;
+  position: relative;
+}
+
+/* line 15, ../scss/screen.scss */
+
+body h1:first-child {
+  background: url(../img/logosmall.PNG);
+  background-repeat: no-repeat;
+  text-indent: -101%;
+  position: absolute;
+  width: 412px;
+  height: 113px;
+  top: -10px;
+  left: 137px;
+}
+
+/* line 25, ../scss/screen.scss */
+
+body section#trombino img {
+  margin: 0 auto;
+  display: block;
+  width: 960px;
+  height: 293px;
+}
+
+/* BARRE DE NAVIGATION */
+
+/* line 35, ../scss/screen.scss */
+
+nav#menu {
+  margin-top: 40px;
+  background-color: #3b444c;
+}
+
+/* line 38, ../scss/screen.scss */
+
+nav#menu ul {
+  padding-left: 600px;
+}
+
+/* line 41, ../scss/screen.scss */
+
+nav#menu li {
+  display: inline;
+  float: left;
+  width: 150px;
+  text-align: center;
+}
+
+/* line 47, ../scss/screen.scss */
+
+nav#menu a {
+  text-decoration: none;
+  display: block;
+  color: #9dafbf;
+  text-transform: uppercase;
+  padding: 22px;
+}
+
+/* line 53, ../scss/screen.scss */
+
+nav#menu a span {
+  font-size: 12px;
+  text-transform: none;
+  display: block;
+  font-family: "Gotham";
+}
+
+/* line 60, ../scss/screen.scss */
+
+nav#menu a:hover {
+  color: white;
+  background-color: #ff9600;
+}
+
+/* line 66, ../scss/screen.scss */
+
+nav#menu:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* SECTION PRINCIPALE */
+
+/* line 74, ../scss/screen.scss */
+
+section#main {
+  margin: 30px auto;
+  width: 960px;
+  background-color: rgba(151, 151, 151, 0.5);
+}
+
+/* line 78, ../scss/screen.scss */
+
+section#main h2 {
+  font-family: "Lato Light", "Franklin Gothic Book";
+  font-size: 25px;
+  margin-top: 40px;
+  color: white;
+  background-color: #3b444c;
+  width: 90%;
+  line-height: 80px;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  padding-left: 20px;
+}
+
+/* line 89, ../scss/screen.scss */
+
+section#main li {
+  padding: 5px 35px;
+  margin: 25px 19px;
+  display: inline;
+  color: white;
+  float: left;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+  font-size: 18px;
+}
+
+/* line 98, ../scss/screen.scss */
+
+section#main .color1 {
+  background-color: rgba(255, 150, 0, 0.7);
+}
+
+/* line 101, ../scss/screen.scss */
+
+section#main .color2 {
+  background-color: #969696;
+}
+
+/* line 104, ../scss/screen.scss */
+
+section#main span {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  padding: 30px;
+}
+
+/* line 110, ../scss/screen.scss */
+
+section#main article.propos {
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+/* line 113, ../scss/screen.scss */
+
+section#main article.propos h3 {
+  color: white;
+  font-family: "Lato Light", "Franklin Gothic Book";
+  font-size: 25px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+/* line 120, ../scss/screen.scss */
+
+section#main article.propos p {
+  text-indent: 5%;
+  font-size: 20px;
+}
+
+/* line 126, ../scss/screen.scss */
+
+section#main p.accueil {
+  margin-top: 30px;
+  padding-left: 26px;
+}
+
+/* line 130, ../scss/screen.scss */
+
+section#main img {
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+}
+
+/* line 136, ../scss/screen.scss */
+
+section#main .adjust {
+  visibility: hidden;
+}
+
+/* line 139, ../scss/screen.scss */
+
+section#main li.contact {
+  width: 200px;
+  float: left;
+}
+
+/* line 142, ../scss/screen.scss */
+
+section#main li.contact p {
+  display: block;
+  clear: both;
+}
+
+/* line 146, ../scss/screen.scss */
+
+section#main li.contact img {
+  position: relative;
+  left: 20px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 152, ../scss/screen.scss */
+
+section#main article.box {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 157, ../scss/screen.scss */
+
+section#main article.box p {
+  position: absolute;
+  bottom: 0;
+  top: 0px;
+  left: 0;
+  right: 0;
+  margin-bottom: -50px;
+}
+
+/* line 166, ../scss/screen.scss */
+
+section#main article.box:hover p {
+  margin-bottom: 0;
+}
+
+/* line 172, ../scss/screen.scss */
+
+section#main ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* line 178, ../scss/screen.scss */
+
+section#main:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* line 184, ../scss/screen.scss */
+
+section#projet {
+  margin: 30px auto;
+  width: 960px;
+  background-color: rgba(151, 151, 151, 0.5);
+  position: relative;
+}
+
+/* line 189, ../scss/screen.scss */
+
+section#projet h2 {
+  font-family: "Lato Light", "Franklin Gothic Book";
+  font-size: 25px;
+  margin-top: 40px;
+  color: white;
+  background-color: #3b444c;
+  width: 90%;
+  line-height: 80px;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  padding-left: 20px;
+}
+
+/* line 200, ../scss/screen.scss */
+
+section#projet article.left,
+section#projet article.right {
+  margin-top: 40px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+/* line 204, ../scss/screen.scss */
+
+section#projet article.left h3,
+section#projet article.right h3 {
+  color: white;
+  font-family: "Lato Light", "Franklin Gothic Book";
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+/* line 210, ../scss/screen.scss */
+
+section#projet article.left p,
+section#projet article.right p {
+  text-indent: 5%;
+}
+
+/* line 214, ../scss/screen.scss */
+
+section#projet article.right {
+  float: right;
+  text-align: right;
+  margin-right: 20px;
+}
+
+/* line 220, ../scss/screen.scss */
+
+section#projet img {
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+}
+
+/* line 223, ../scss/screen.scss */
+
+section#projet .img1 {
+  float: right;
+  margin: 40px 20px 0 40px;
+}
+
+/* line 227, ../scss/screen.scss */
+
+section#projet .img2 {
+  float: left;
+  margin: 40px 20px 40px 0;
+}
+
+/* line 233, ../scss/screen.scss */
+
+article.left:after,
+section#projet article.right:after,
+article.right:after,
+section#projet:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*FOOTER */
+
+/* line 241, ../scss/screen.scss */
+
+footer {
+  background-color: #3b444c;
+}
+
+/* line 243, ../scss/screen.scss */
+
+footer #face:hover {
+  background: url("../img/facebookHoover.png");
+}
+
+/* line 246, ../scss/screen.scss */
+
+footer #linked:hover {
+  background: url("../img/linkedinHoover.png");
+}

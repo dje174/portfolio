@@ -1,0 +1,249 @@
+@import "compass";
+@import "colors";
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin : 0; padding : 0; border : 0; outline : 0; font-size : 100%; vertical-align : baseline; background : transparent; }
+
+html{
+background: url('../img/triangular.png');
+}
+
+body {
+	width: 100%;
+	font-family: "Lato", "Arial", sans-serif;
+	position: relative;
+	h1:first-child{
+		background: url(../img/logosmall.PNG);
+		background-repeat: no-repeat;
+		text-indent: -101%;
+		position: absolute;
+		width: 412px;
+		height: 113px;
+		top: -10px;
+		left: 137px;
+	}
+	section#trombino img {
+		margin: 0 auto;
+		display: block;
+		width: 960px;
+		height: 293px;
+	}
+}
+
+/* BARRE DE NAVIGATION */
+
+nav#menu {
+	margin-top: 40px;
+	background-color: $grisBleu;
+	ul {
+		padding-left: 600px;
+	}
+	li {
+	display: inline;
+	float: left;
+	width: 150px;
+	text-align: center;
+	}
+	a {
+	text-decoration: none;
+	display: block;
+	color: $bleuLiens;
+	text-transform: uppercase;
+	padding: 22px;
+		span {
+			font-size: 12px;
+			text-transform: none;
+			display: block;
+			font-family: "Gotham";
+		}
+	}
+	a:hover{
+		color: white;
+		background-color: $hoverBoutons;
+	}
+}
+
+nav#menu:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* SECTION PRINCIPALE */
+
+section#main {
+	margin: 30px auto;
+	width: 960px;
+	background-color: rgba(151, 151, 151, 0.5);
+	h2 {
+		font-family:"Lato Light", "Franklin Gothic Book";
+		font-size: 25px;
+		margin-top: 40px;
+		color: white;
+		background-color: $grisBleu;
+		width: 90%;
+		line-height: 80px;
+		@include single-box-shadow;
+		padding-left: 20px;
+	}
+	li {
+		padding: 5px 35px;
+		margin: 25px 19px;
+		display: inline;
+		color: white;
+		float: left;
+		@include border-radius(25px);
+		font-size: 18px;
+	}
+	.color1 {
+			background-color: rgba(255, 150, 0, 0.7);
+		}
+	.color2 {
+		background-color: rgba(150, 150, 150, 1);
+	}
+	span {
+		display: block;
+		text-align: center;
+		font-weight: bold;
+		padding: 30px;
+	}
+	article.propos {
+	margin-top: 40px;
+	font-size: 20px;	
+		h3 {
+			color: white;
+			font-family:"Lato Light", "Franklin Gothic Book";
+			font-size: 25px;
+			margin-bottom: 30px;
+			margin-left: 20px;
+		}
+		p{
+			text-indent: 5%;
+			font-size: 20px;
+		}
+	}
+	
+	p.accueil{
+		margin-top: 30px;
+		padding-left: 26px;
+	}
+	img {
+		float: left;
+		margin-left: 10px;
+		margin-top: 10px;
+		@include single-box-shadow;
+	}
+	.adjust{
+		visibility: hidden;
+	}
+	li.contact{
+		width: 200px;
+		float: left;
+		p{
+			display: block;
+			clear: both;
+		}
+		img{
+			position: relative;
+			left: 20px;
+            box-shadow: none;
+		}
+	}
+	article.box {
+		width: auto;
+		height: auto;
+		overflow: hidden;
+		position: relative;
+		p {
+			position: absolute;
+			bottom:0;
+			top:0px;
+			left:0;
+			right:0;
+			margin-bottom: -50px;
+		}
+	}
+	article.box:hover p {
+		margin-bottom: 0;
+	}
+
+}
+
+section#main ul:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+section#main:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+section#projet {
+	margin: 30px auto;
+	width: 960px;
+	background-color: rgba(151, 151, 151, 0.5);
+	position: relative;
+	h2 {
+		font-family:"Lato Light", "Franklin Gothic Book";
+		font-size: 25px;
+		margin-top: 40px;
+		color: white;
+		background-color: $grisBleu;
+		width: 90%;
+		line-height: 80px;
+		@include single-box-shadow;
+		padding-left: 20px;
+	}
+	article.left{
+		margin-top: 40px;
+		margin-left: 20px;
+		font-size: 20px;
+		h3 {
+			color: white;
+			font-family:"Lato Light", "Franklin Gothic Book";
+			font-size: 25px;
+			margin-bottom: 30px;
+		}
+		p {
+			text-indent: 5%;
+		}
+	}
+	article.right{
+		@extend .left;
+		float: right;
+		text-align: right;
+		margin-right: 20px;
+	}
+	img{
+		@include single-box-shadow;
+	}
+	.img1{
+		float: right;
+		margin: 40px 20px 0 40px;
+	}
+	.img2{
+		float: left;
+		margin: 40px 20px 40px 0;
+	}
+}
+
+article.left:after,article.right:after,section#projet:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*FOOTER */
+
+footer {
+	background-color: $grisBleu;
+	#face:hover{
+		background: url('../img/facebookHoover.png');
+	}
+	#linked:hover{
+		background: url('../img/linkedinHoover.png');
+	}
+}
