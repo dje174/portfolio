@@ -1,0 +1,35 @@
+@media only screen and (min-width : 360px) and (max-width : 500px) {
+	body {
+		width: auto;
+		
+	}
+	section#main {
+		width: 0 auto;
+		li{
+			padding: 20px 15px;
+			margin: 20px 0 0 10px;
+		}
+		span{
+			font-size: 14px;
+		}
+	}
+	section#trombino {
+		display: none;
+	}
+	nav#menu{
+		margin-top: 150px;
+		ul {
+			padding-left: 0;
+		}
+		li{
+			width: 50%;
+		}
+	}
+	div#logo{
+			position: absolute;
+			width: 412px;
+			height: 113px;
+			top: -125px;
+			left: 0;
+		}
+}

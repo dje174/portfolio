@@ -16,18 +16,9 @@ body {
 	width: 100%;
 	font-family: "Lato", "Helvetica Neue", "Arial", sans-serif;
 	position: relative;
-	div#logo{
-		position: absolute;
-		width: 412px;
-		height: 113px;
-		top: -16px;
-		left: 137px;
-	}
 	section#trombino img {
 		margin: 0 auto;
 		display: block;
-		width: 1100px;
-		height: 336px;
 	}
 	h2 {
 		color: $grisBleu;
@@ -43,6 +34,14 @@ body {
 			text-decoration: underline;
 		}
 	}
+}
+
+#logo{
+	position: absolute;
+	width: 412px;
+	height: 113px;
+	top: -16px;
+	left: 137px;
 }
 
 /* BARRE DE NAVIGATION */
@@ -83,7 +82,7 @@ nav#menu {
 
 section#main {
 	margin: 30px auto;
-	width: 1000px;
+	/*width: 1000%;*/
 	background-color: rgba(220, 220, 220, 1);
 	h1 {
 		font-family:"Lato Light", "Franklin Gothic Book";
@@ -91,7 +90,6 @@ section#main {
 		margin: 40px 0 25px 0;
 		color: white;
 		background-color: $grisBleu;
-		width: 98%;
 		line-height: 60px;
 		@include single-box-shadow;
 		padding-left: 20px;
@@ -261,3 +259,6 @@ article.left:after,article.right:after,section#projet:after,section#main:after,s
 	display: block;
 	clear: both;
 }
+
+
+@import "mediasQueries";
