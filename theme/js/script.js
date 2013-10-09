@@ -36,6 +36,7 @@
 		$trombiPhotos.not(":first").hide();*/
 		trombinext();
 	});
+	
 
 }).call(this,jQuery); //Fonction anonyme dites contenaire qu'on appelle avec call avec comme paramètre jQuery pour appelé jQuery quand on apelle la fonction qui contient les variables. 
 //Ainsi on est sur que $ vaut jQuery pendant toute la durée de la fonction.

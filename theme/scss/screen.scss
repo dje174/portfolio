@@ -7,6 +7,11 @@ html{
 background: url('../img/brushed.png');
 }
 
+h1.cache {
+	position: absolute;
+	text-indent: -101%;
+}
+
 body {
 	width: 100%;
 	font-family: "Lato", "Helvetica Neue", "Arial", sans-serif;
@@ -28,7 +33,7 @@ body {
 		color: $grisBleu;
 		font-family:"Lato Light", "Franklin Gothic Book";
 		font-size: 25px;
-		margin: 10px 0 20px 10px;
+		margin: 10px 0 20px 20px;
 		font-weight: bold;
 	}
 	a{
@@ -188,7 +193,6 @@ section#main {
 	}
 /* Blog */
 	article.articlesBlog {
-		margin: 10px;
 		span{
 			font-size: 16px;
 		}
