@@ -1,9 +1,7 @@
 @import "compass";
 @import "colors";
 @import "compass/reset";
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-  margin : 0; padding : 0; border : 0; outline : 0; font-size : 100%; vertical-align : baseline; background : transparent; }
+@import "normalize";
 
 html{
 background: url('../img/brushed.png');
@@ -14,20 +12,20 @@ body {
 	font-family: "Lato", "Arial", sans-serif;
 	position: relative;
 	h1:first-child{
-		background: url(../img/logosmall.PNG);
+		background: url(../img/logosmall2.PNG);
 		background-repeat: no-repeat;
 		text-indent: -101%;
 		position: absolute;
 		width: 412px;
 		height: 113px;
-		top: -10px;
+		top: -37px;
 		left: 137px;
 	}
 	section#trombino img {
 		margin: 0 auto;
 		display: block;
-		width: 960px;
-		height: 293px;
+		width: 1100px;
+		height: 336px;
 	}
 	h3 {
 		color: $grisBleu;
@@ -35,6 +33,14 @@ body {
 		font-size: 25px;
 		margin-bottom: 20px;
 		margin-left: 20px;
+		font-weight: bold;
+	}
+	a{
+		text-decoration: none;
+		color: $OrangeLiens;
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -59,7 +65,7 @@ nav#menu {
 	color: $bleuLiens;
 	text-transform: uppercase;
 	padding: 22px;
-		span {
+		span.menu {
 			font-size: 12px;
 			text-transform: none;
 			display: block;
@@ -68,7 +74,7 @@ nav#menu {
 	}
 	a:hover{
 		color: white;
-		background-color: $hoverBoutons;
+		background-color: $OrangeBoutons;
 	}
 }
 
@@ -89,8 +95,11 @@ section#main {
 		@include single-box-shadow;
 		padding-left: 20px;
 	}
+
+/* Accueil */
+
 	li {
-		padding: 5px 0;
+		padding: 20px 0;
 		margin: 25px 19px 0 19px;
 		width: 21%;
 		display: inline;
@@ -105,11 +114,10 @@ section#main {
 	.color2 {
 		background-color: rgba(150, 150, 150, 1);
 	}
-	span {
+	span.spanComp {
 		display: block;
 		text-align: center;
 		font-weight: bold;
-		padding: 30px;
 	}
 	article.propos {
 	margin-top: 40px;
@@ -126,19 +134,9 @@ section#main {
 	.adjust{
 		visibility: hidden;
 	}
-	li.contact{
-		width: 200px;
-		float: left;
-		p{
-			display: block;
-			clear: both;
-		}
-		img{
-			position: relative;
-			left: 20px;
-            box-shadow: none;
-		}
-	}
+
+/*Mise en place images + effet */
+
 	figure {
 		margin-left: 20px;
 		margin-top: 20px;
@@ -173,7 +171,42 @@ section#main {
 		float: left;
 	}
 
+/* Contact */
+	form {
+		padding: 20px;
+		label{
+			display: block;
+		}
+		input,textarea{
+			@include border-radius(5px);
+			padding: 10px;
+			border: none;
+			margin: 5px 0 10px 0;
+		}
+		input#submit {
+			display: block;
+			background-color: $grisBleu;
+			color: white;
+			cursor: pointer;
+		}
+	}
+/* Blog */
+	article.articlesBlog {
+		margin: 10px;
+		span{
+			font-size: 16px;
+		}
+		p{
+			margin-left: 40px;
+		}
+		a{
+			margin: 40px;
+			line-height: 40px;
+		}
+	}
 }
+
+/* Mise en place de la page projet type */
 
 section#projet {
 	margin: 30px auto;
@@ -196,8 +229,6 @@ section#projet {
 		margin-left: 20px;
 		font-size: 20px;
 		h3 {
-			color: $grisBleu;
-			font-family:"Lato Light", "Franklin Gothic Book";
 			font-size: 25px;
 			margin-bottom: 30px;
 		}

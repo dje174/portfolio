@@ -13,7 +13,7 @@
 (function( $ ){
 	"use strict";
 
-	var iTrombiDelay = 2000,
+	var iTrombiDelay = 3000,
 	$trombiPhotos
 
 	var trombinext = function(){
