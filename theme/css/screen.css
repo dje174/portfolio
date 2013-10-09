@@ -671,24 +671,21 @@ html {
 
 body {
   width: 100%;
-  font-family: "Lato", "Arial", sans-serif;
+  font-family: "Lato", "Helvetica Neue", "Arial", sans-serif;
   position: relative;
 }
 
 /* line 14, ../scss/screen.scss */
 
-body h1:first-child {
-  background: url(../img/logosmall2.PNG);
-  background-repeat: no-repeat;
-  text-indent: -101%;
+body div#logo {
   position: absolute;
   width: 412px;
   height: 113px;
-  top: -37px;
+  top: -16px;
   left: 137px;
 }
 
-/* line 24, ../scss/screen.scss */
+/* line 21, ../scss/screen.scss */
 
 body section#trombino img {
   margin: 0 auto;
@@ -697,25 +694,24 @@ body section#trombino img {
   height: 336px;
 }
 
-/* line 30, ../scss/screen.scss */
+/* line 27, ../scss/screen.scss */
 
-body h3 {
+body h2 {
   color: #3b444c;
   font-family: "Lato Light", "Franklin Gothic Book";
   font-size: 25px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  margin: 10px 0 20px 10px;
   font-weight: bold;
 }
 
-/* line 38, ../scss/screen.scss */
+/* line 34, ../scss/screen.scss */
 
 body a {
   text-decoration: none;
   color: #cf7200;
 }
 
-/* line 41, ../scss/screen.scss */
+/* line 37, ../scss/screen.scss */
 
 body a:hover {
   text-decoration: underline;
@@ -723,7 +719,7 @@ body a:hover {
 
 /* BARRE DE NAVIGATION */
 
-/* line 49, ../scss/screen.scss */
+/* line 45, ../scss/screen.scss */
 
 nav#menu {
   margin-top: 40px;
@@ -732,13 +728,13 @@ nav#menu {
   box-shadow: 0px 0px 5px #333333;
 }
 
-/* line 53, ../scss/screen.scss */
+/* line 49, ../scss/screen.scss */
 
 nav#menu ul {
   padding-left: 600px;
 }
 
-/* line 56, ../scss/screen.scss */
+/* line 52, ../scss/screen.scss */
 
 nav#menu li {
   display: inline;
@@ -747,7 +743,7 @@ nav#menu li {
   text-align: center;
 }
 
-/* line 62, ../scss/screen.scss */
+/* line 58, ../scss/screen.scss */
 
 nav#menu a {
   text-decoration: none;
@@ -757,7 +753,7 @@ nav#menu a {
   padding: 22px;
 }
 
-/* line 68, ../scss/screen.scss */
+/* line 64, ../scss/screen.scss */
 
 nav#menu a span.menu {
   font-size: 12px;
@@ -766,7 +762,7 @@ nav#menu a span.menu {
   font-family: "Gotham";
 }
 
-/* line 75, ../scss/screen.scss */
+/* line 71, ../scss/screen.scss */
 
 nav#menu a:hover {
   color: white;
@@ -775,7 +771,7 @@ nav#menu a:hover {
 
 /* SECTION PRINCIPALE */
 
-/* line 83, ../scss/screen.scss */
+/* line 79, ../scss/screen.scss */
 
 section#main {
   margin: 30px auto;
@@ -787,9 +783,9 @@ section#main {
   /* Blog */
 }
 
-/* line 87, ../scss/screen.scss */
+/* line 83, ../scss/screen.scss */
 
-section#main h2 {
+section#main h1 {
   font-family: "Lato Light", "Franklin Gothic Book";
   font-size: 25px;
   margin: 40px 0 25px 0;
@@ -802,7 +798,7 @@ section#main h2 {
   padding-left: 20px;
 }
 
-/* line 101, ../scss/screen.scss */
+/* line 97, ../scss/screen.scss */
 
 section#main li {
   padding: 20px 0;
@@ -816,19 +812,19 @@ section#main li {
   font-size: 18px;
 }
 
-/* line 111, ../scss/screen.scss */
+/* line 107, ../scss/screen.scss */
 
 section#main .color1 {
   background-color: rgba(255, 150, 0, 0.7);
 }
 
-/* line 114, ../scss/screen.scss */
+/* line 110, ../scss/screen.scss */
 
 section#main .color2 {
   background-color: #969696;
 }
 
-/* line 117, ../scss/screen.scss */
+/* line 113, ../scss/screen.scss */
 
 section#main span.spanComp {
   display: block;
@@ -836,33 +832,33 @@ section#main span.spanComp {
   font-weight: bold;
 }
 
-/* line 122, ../scss/screen.scss */
+/* line 118, ../scss/screen.scss */
 
 section#main article.propos {
   margin-top: 40px;
   font-size: 20px;
 }
 
-/* line 127, ../scss/screen.scss */
+/* line 123, ../scss/screen.scss */
 
 section#main p {
   margin-left: 20px;
   font-size: 20px;
 }
 
-/* line 131, ../scss/screen.scss */
+/* line 127, ../scss/screen.scss */
 
 section#main p.accueil {
   margin-top: 30px;
 }
 
-/* line 134, ../scss/screen.scss */
+/* line 130, ../scss/screen.scss */
 
 section#main .adjust {
   visibility: hidden;
 }
 
-/* line 140, ../scss/screen.scss */
+/* line 136, ../scss/screen.scss */
 
 section#main figure {
   margin-left: 20px;
@@ -871,14 +867,14 @@ section#main figure {
   box-shadow: 0px 0px 5px #333333;
 }
 
-/* line 145, ../scss/screen.scss */
+/* line 141, ../scss/screen.scss */
 
 section#main figure.box {
   overflow: hidden;
   position: relative;
 }
 
-/* line 148, ../scss/screen.scss */
+/* line 144, ../scss/screen.scss */
 
 section#main figure.box figcaption {
   position: absolute;
@@ -892,48 +888,48 @@ section#main figure.box figcaption {
   transition: margin-bottom 0.3s ease-in, color 0.5s ease-out;
 }
 
-/* line 159, ../scss/screen.scss */
+/* line 155, ../scss/screen.scss */
 
 section#main figure.box:hover figcaption {
   margin-bottom: 0;
 }
 
-/* line 162, ../scss/screen.scss */
+/* line 158, ../scss/screen.scss */
 
 section#main figure.big {
   width: 460px;
   height: 310px;
 }
 
-/* line 166, ../scss/screen.scss */
+/* line 162, ../scss/screen.scss */
 
 section#main figure.little {
   width: 230px;
   height: 145px;
 }
 
-/* line 170, ../scss/screen.scss */
+/* line 166, ../scss/screen.scss */
 
 section#main figure {
   float: left;
 }
 
-/* line 175, ../scss/screen.scss */
+/* line 171, ../scss/screen.scss */
 
-section#main form {
+section#main form.poster {
   padding: 20px;
 }
 
-/* line 177, ../scss/screen.scss */
+/* line 173, ../scss/screen.scss */
 
-section#main form label {
+section#main form.poster label {
   display: block;
 }
 
-/* line 180, ../scss/screen.scss */
+/* line 176, ../scss/screen.scss */
 
-section#main form input,
-section#main form textarea {
+section#main form.poster input,
+section#main form.poster textarea {
   -o-border-radius: 5px;
   border-radius: 5px;
   padding: 10px;
@@ -941,43 +937,44 @@ section#main form textarea {
   margin: 5px 0 10px 0;
 }
 
-/* line 186, ../scss/screen.scss */
+/* line 182, ../scss/screen.scss */
 
-section#main form input#submit {
+section#main form.poster input#submit {
   display: block;
   background-color: #3b444c;
   color: white;
   cursor: pointer;
 }
 
-/* line 194, ../scss/screen.scss */
+/* line 190, ../scss/screen.scss */
 
 section#main article.articlesBlog {
   margin: 10px;
 }
 
-/* line 196, ../scss/screen.scss */
+/* line 192, ../scss/screen.scss */
 
 section#main article.articlesBlog span {
   font-size: 16px;
 }
 
-/* line 199, ../scss/screen.scss */
+/* line 195, ../scss/screen.scss */
 
 section#main article.articlesBlog p {
   margin-left: 40px;
+  margin-bottom: 20px;
 }
 
-/* line 202, ../scss/screen.scss */
+/* line 199, ../scss/screen.scss */
 
-section#main article.articlesBlog a {
+section#main article.articlesBlog a.commentaires {
   margin: 40px;
   line-height: 40px;
 }
 
 /* Mise en place de la page projet type */
 
-/* line 211, ../scss/screen.scss */
+/* line 208, ../scss/screen.scss */
 
 section#projet {
   margin: 30px auto;
@@ -986,7 +983,7 @@ section#projet {
   position: relative;
 }
 
-/* line 216, ../scss/screen.scss */
+/* line 213, ../scss/screen.scss */
 
 section#projet h2 {
   font-family: "Lato Light", "Franklin Gothic Book";
@@ -1001,7 +998,7 @@ section#projet h2 {
   padding-left: 20px;
 }
 
-/* line 227, ../scss/screen.scss */
+/* line 224, ../scss/screen.scss */
 
 section#projet article.left,
 section#projet article.right {
@@ -1010,22 +1007,22 @@ section#projet article.right {
   font-size: 20px;
 }
 
-/* line 231, ../scss/screen.scss */
+/* line 228, ../scss/screen.scss */
 
-section#projet article.left h3,
-section#projet article.right h3 {
+section#projet article.left h2,
+section#projet article.right h2 {
   font-size: 25px;
   margin-bottom: 30px;
 }
 
-/* line 235, ../scss/screen.scss */
+/* line 232, ../scss/screen.scss */
 
 section#projet article.left p,
 section#projet article.right p {
   margin-bottom: 20px;
 }
 
-/* line 239, ../scss/screen.scss */
+/* line 236, ../scss/screen.scss */
 
 section#projet article.right {
   float: right;
@@ -1033,28 +1030,28 @@ section#projet article.right {
   margin-right: 20px;
 }
 
-/* line 245, ../scss/screen.scss */
+/* line 242, ../scss/screen.scss */
 
 section#projet img {
   -webkit-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
 }
 
-/* line 248, ../scss/screen.scss */
+/* line 245, ../scss/screen.scss */
 
 section#projet .img1 {
   float: right;
   margin: 65px 20px 0 40px;
 }
 
-/* line 252, ../scss/screen.scss */
+/* line 249, ../scss/screen.scss */
 
 section#projet .img2 {
   float: left;
   margin: 65px 20px 40px 0;
 }
 
-/* line 258, ../scss/screen.scss */
+/* line 255, ../scss/screen.scss */
 
 article.left:after,
 section#projet article.right:after,

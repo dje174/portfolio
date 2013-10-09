@@ -9,16 +9,13 @@ background: url('../img/brushed.png');
 
 body {
 	width: 100%;
-	font-family: "Lato", "Arial", sans-serif;
+	font-family: "Lato", "Helvetica Neue", "Arial", sans-serif;
 	position: relative;
-	h1:first-child{
-		background: url(../img/logosmall2.PNG);
-		background-repeat: no-repeat;
-		text-indent: -101%;
+	div#logo{
 		position: absolute;
 		width: 412px;
 		height: 113px;
-		top: -37px;
+		top: -16px;
 		left: 137px;
 	}
 	section#trombino img {
@@ -27,12 +24,11 @@ body {
 		width: 1100px;
 		height: 336px;
 	}
-	h3 {
+	h2 {
 		color: $grisBleu;
 		font-family:"Lato Light", "Franklin Gothic Book";
 		font-size: 25px;
-		margin-bottom: 20px;
-		margin-left: 20px;
+		margin: 10px 0 20px 10px;
 		font-weight: bold;
 	}
 	a{
@@ -84,7 +80,7 @@ section#main {
 	margin: 30px auto;
 	width: 1000px;
 	background-color: rgba(220, 220, 220, 1);
-	h2 {
+	h1 {
 		font-family:"Lato Light", "Franklin Gothic Book";
 		font-size: 25px;
 		margin: 40px 0 25px 0;
@@ -172,7 +168,7 @@ section#main {
 	}
 
 /* Contact */
-	form {
+	form.poster {
 		padding: 20px;
 		label{
 			display: block;
@@ -198,8 +194,9 @@ section#main {
 		}
 		p{
 			margin-left: 40px;
+			margin-bottom: 20px;
 		}
-		a{
+		a.commentaires{
 			margin: 40px;
 			line-height: 40px;
 		}
@@ -228,7 +225,7 @@ section#projet {
 		margin-top: 40px;
 		margin-left: 20px;
 		font-size: 20px;
-		h3 {
+		h2 {
 			font-size: 25px;
 			margin-bottom: 30px;
 		}
