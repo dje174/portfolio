@@ -192,26 +192,36 @@ body section#trombino img {
 
 /* line 25, ../scss/screen.scss */
 
+body h1 {
+  font-size: 20px;
+  color: black;
+  line-height: 60px;
+  padding: 15px 25px 0 0;
+  text-transform: uppercase;
+}
+
+/* line 32, ../scss/screen.scss */
+
 body h2 {
   font-size: 25px;
   margin: 10px 0 0px 20px;
   font-weight: bold;
 }
 
-/* line 30, ../scss/screen.scss */
+/* line 37, ../scss/screen.scss */
 
 body a {
   text-decoration: none;
-  color: #cf7200;
+  color: rgba(36, 90, 122, 0.9);
 }
 
-/* line 33, ../scss/screen.scss */
+/* line 40, ../scss/screen.scss */
 
 body a:hover {
   text-decoration: underline;
 }
 
-/* line 39, ../scss/screen.scss */
+/* line 46, ../scss/screen.scss */
 
 #logo {
   position: absolute;
@@ -222,22 +232,22 @@ body a:hover {
 
 /* BARRE DE NAVIGATION */
 
-/* line 48, ../scss/screen.scss */
+/* line 55, ../scss/screen.scss */
 
 nav#menu {
   background-color: #dbd9a8;
-  z-index: 900;
+  z-index: 10;
   -webkit-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
 }
 
-/* line 52, ../scss/screen.scss */
+/* line 59, ../scss/screen.scss */
 
 nav#menu ul {
   padding-left: 600px;
 }
 
-/* line 55, ../scss/screen.scss */
+/* line 62, ../scss/screen.scss */
 
 nav#menu li {
   display: inline;
@@ -246,7 +256,7 @@ nav#menu li {
   text-align: center;
 }
 
-/* line 61, ../scss/screen.scss */
+/* line 68, ../scss/screen.scss */
 
 nav#menu a {
   text-decoration: none;
@@ -256,7 +266,7 @@ nav#menu a {
   padding: 10px;
 }
 
-/* line 67, ../scss/screen.scss */
+/* line 74, ../scss/screen.scss */
 
 nav#menu a span.menu {
   font-size: 12px;
@@ -265,7 +275,7 @@ nav#menu a span.menu {
   font-family: "Gotham";
 }
 
-/* line 74, ../scss/screen.scss */
+/* line 81, ../scss/screen.scss */
 
 nav#menu a:hover {
   color: white;
@@ -274,26 +284,15 @@ nav#menu a:hover {
 
 /* SECTION PRINCIPALE */
 
-/* line 82, ../scss/screen.scss */
+/* line 89, ../scss/screen.scss */
 
 section#main {
-  /* Accueil */
   /*Mise en place images + effet */
   /* Contact */
   /* Blog */
 }
 
-/* line 83, ../scss/screen.scss */
-
-section#main h1 {
-  font-size: 25px;
-  color: black;
-  line-height: 60px;
-  padding-left: 25px;
-  text-transform: uppercase;
-}
-
-/* line 93, ../scss/screen.scss */
+/* line 90, ../scss/screen.scss */
 
 section#main li {
   padding: 50px 0;
@@ -304,25 +303,25 @@ section#main li {
   font-size: 18px;
 }
 
-/* line 101, ../scss/screen.scss */
+/* line 98, ../scss/screen.scss */
 
 section#main .color1 {
   background-color: rgba(36, 90, 122, 0.9);
 }
 
-/* line 104, ../scss/screen.scss */
+/* line 101, ../scss/screen.scss */
 
 section#main .color2 {
   background-color: rgba(3, 67, 106, 0.9);
 }
 
-/* line 107, ../scss/screen.scss */
+/* line 104, ../scss/screen.scss */
 
 section#main .color3 {
   background-color: rgba(100, 168, 209, 0.9);
 }
 
-/* line 110, ../scss/screen.scss */
+/* line 107, ../scss/screen.scss */
 
 section#main span.spanComp {
   display: block;
@@ -330,33 +329,33 @@ section#main span.spanComp {
   font-weight: bold;
 }
 
-/* line 115, ../scss/screen.scss */
+/* line 112, ../scss/screen.scss */
 
 section#main article.propos {
   margin-top: 40px;
   font-size: 20px;
 }
 
-/* line 120, ../scss/screen.scss */
+/* line 117, ../scss/screen.scss */
 
 section#main p {
   margin-left: 20px;
   font-size: 20px;
 }
 
-/* line 124, ../scss/screen.scss */
+/* line 121, ../scss/screen.scss */
 
 section#main p.accueil {
   margin-top: 30px;
 }
 
-/* line 127, ../scss/screen.scss */
+/* line 124, ../scss/screen.scss */
 
 section#main .adjust {
   visibility: hidden;
 }
 
-/* line 133, ../scss/screen.scss */
+/* line 130, ../scss/screen.scss */
 
 section#main figure {
   margin-left: 20px;
@@ -365,25 +364,31 @@ section#main figure {
   box-shadow: 0px 0px 5px #333333;
 }
 
-/* line 138, ../scss/screen.scss */
+/* line 135, ../scss/screen.scss */
 
 section#main figure.box {
   overflow: hidden;
   position: relative;
 }
 
-/* line 141, ../scss/screen.scss */
+/* line 138, ../scss/screen.scss */
 
 section#main figure.box figcaption {
   position: absolute;
   bottom: 0;
   left: 0;
-  margin-bottom: -100px;
+  margin-bottom: -170px;
   background-color: rgba(1, 1, 1, 0.7);
   color: white;
   padding: 10px;
   -webkit-transition: margin-bottom 0.3s ease-in, color 0.5s ease-out;
   transition: margin-bottom 0.3s ease-in, color 0.5s ease-out;
+}
+
+/* line 148, ../scss/screen.scss */
+
+section#main figure.box p {
+  font-size: 15px;
 }
 
 /* line 152, ../scss/screen.scss */
@@ -468,39 +473,82 @@ section#main article.articlesBlog a.commentaires {
 
 /* line 203, ../scss/screen.scss */
 
-#presentation:before {
-  content: url("../img/icons/profile.png");
+.titreIcons {
+  margin-left: 60px;
+}
+
+/* line 207, ../scss/screen.scss */
+
+#briefPres:before {
+  content: url("../img/icons/book.png");
+  margin-right: 10px;
   position: relative;
-  top: 7px;
+  top: 7.5px;
+}
+
+/* line 214, ../scss/screen.scss */
+
+#knowledge:before {
+  content: url("../img/icons/drawer2.png");
+  margin-right: 10px;
+  position: relative;
+  top: 7.5px;
+}
+
+/* line 221, ../scss/screen.scss */
+
+#knowledge2:before {
+  content: url("../img/icons/drawer.png");
+  margin-right: 10px;
+  position: relative;
+  top: 7.5px;
+}
+
+/* line 228, ../scss/screen.scss */
+
+.portfolio:before {
+  content: url("../img/icons/screen.png");
+  margin-right: 10px;
+  position: relative;
+  top: 7.5px;
+}
+
+/* line 235, ../scss/screen.scss */
+
+#contact:before {
+  content: url("../img/icons/mail2.png");
+  margin-right: 10px;
+  position: relative;
+  top: 7.5px;
+}
+
+/* line 242, ../scss/screen.scss */
+
+#about:before {
+  content: url("../img/icons/pencil2.png");
+  margin-right: 10px;
+  position: relative;
+  top: 7.5px;
+}
+
+/* line 249, ../scss/screen.scss */
+
+#blog:before {
+  content: url("../img/icons/notebook.png");
+  margin-right: 10px;
+  position: relative;
+  top: 7.5px;
 }
 
 /* Mise en place de la page projet type */
 
-/* line 211, ../scss/screen.scss */
+/* line 258, ../scss/screen.scss */
 
 section#projet {
-  margin: 30px auto;
-  width: 960px;
-  background-color: gainsboro;
   position: relative;
 }
 
-/* line 216, ../scss/screen.scss */
-
-section#projet h2 {
-  font-family: "Lato Light", "Franklin Gothic Book";
-  font-size: 25px;
-  margin-top: 40px;
-  color: white;
-  background-color: #3b444c;
-  width: 98%;
-  line-height: 60px;
-  -webkit-box-shadow: 0px 0px 5px #333333;
-  box-shadow: 0px 0px 5px #333333;
-  padding-left: 20px;
-}
-
-/* line 227, ../scss/screen.scss */
+/* line 260, ../scss/screen.scss */
 
 section#projet article.left,
 section#projet article.right {
@@ -510,7 +558,7 @@ section#projet article.right {
   float: left;
 }
 
-/* line 232, ../scss/screen.scss */
+/* line 265, ../scss/screen.scss */
 
 section#projet article.left h2,
 section#projet article.right h2 {
@@ -518,14 +566,14 @@ section#projet article.right h2 {
   margin-bottom: 30px;
 }
 
-/* line 236, ../scss/screen.scss */
+/* line 269, ../scss/screen.scss */
 
 section#projet article.left p,
 section#projet article.right p {
   margin-bottom: 20px;
 }
 
-/* line 240, ../scss/screen.scss */
+/* line 273, ../scss/screen.scss */
 
 section#projet article.right {
   float: right;
@@ -533,28 +581,28 @@ section#projet article.right {
   margin-right: 20px;
 }
 
-/* line 246, ../scss/screen.scss */
+/* line 279, ../scss/screen.scss */
 
 section#projet img {
   -webkit-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
 }
 
-/* line 249, ../scss/screen.scss */
+/* line 282, ../scss/screen.scss */
 
 section#projet .img1 {
   float: right;
   margin: 65px 20px 0 40px;
 }
 
-/* line 253, ../scss/screen.scss */
+/* line 286, ../scss/screen.scss */
 
 section#projet .img2 {
   float: left;
   margin: 65px 20px 40px 0;
 }
 
-/* line 259, ../scss/screen.scss */
+/* line 292, ../scss/screen.scss */
 
 article.left:after,
 section#projet article.right:after,

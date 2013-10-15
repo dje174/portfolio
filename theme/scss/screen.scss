@@ -14,13 +14,20 @@ h1.cache {
 body {
 	width: 100%;
 	font: 14px/1.5 "Lato", "Helvetica Neue", "Arial", "Franklin Gothic Book" sans-serif;
-	background-color: #dbd9a8;
+	background-color: $fondBeige;
 	position: relative;
 	section#trombino img {
 		width: 100%;
 		margin: 0 auto;
 		display: block;
 		z-index: 1000;
+	}
+	h1 {
+		font-size: 20px;
+		color: black;
+		line-height: 60px;
+		padding: 15px 25px 0 0;
+		text-transform: uppercase;
 	}
 	h2 {
 		font-size: 25px;
@@ -29,7 +36,7 @@ body {
 	}
 	a{
 		text-decoration: none;
-		color: $OrangeLiens;
+		color: $bleuTeinte1;
 		&:hover {
 			text-decoration: underline;
 		}
@@ -46,8 +53,8 @@ body {
 /* BARRE DE NAVIGATION */
 
 nav#menu {
-	background-color: #dbd9a8;
-	z-index: 900;
+	background-color: $fondBeige;
+	z-index: 10;
 	@include single-box-shadow;
 	ul {
 		padding-left: 600px;
@@ -80,16 +87,6 @@ nav#menu {
 /* SECTION PRINCIPALE */
 
 section#main {
-	h1 {
-		font-size: 25px;
-		color: black;
-		line-height: 60px;
-		padding-left: 25px;
-		text-transform: uppercase;
-	}
-
-/* Accueil */
-
 	li {
 		padding: 50px 0;
 		width: 25%;
@@ -142,11 +139,14 @@ section#main {
 			position: absolute;
 			bottom:0;
 			left:0;
-			margin-bottom: -100px;
+			margin-bottom: -170px;
 			background-color: rgba(1,1,1,0.7);
 			color: white;
 			padding: 10px;
 			@include transition(margin-bottom 0.3s ease-in, color 0.5s ease-out);
+		}
+		p{
+			font-size: 15px;
 		}
 	}
 	figure.box:hover figcaption {
@@ -200,30 +200,63 @@ section#main {
 }
 
 /* ICONS */
-#presentation:before{
-	content: url('../img/icons/profile.png');
+.titreIcons {
+	margin-left: 60px;
+}
+
+#briefPres:before{
+	content: url('../img/icons/book.png');
+	margin-right: 10px;
 	position: relative;
-	top: 7px;
+	top: 7.5px;
+}
+
+#knowledge:before{
+	content: url('../img/icons/drawer2.png');
+	margin-right: 10px;
+	position: relative;
+	top: 7.5px;
+}
+
+#knowledge2:before{
+	content: url('../img/icons/drawer.png');
+	margin-right: 10px;
+	position: relative;
+	top: 7.5px;
+}
+
+.portfolio:before{
+	content: url('../img/icons/screen.png');
+	margin-right: 10px;
+	position: relative;
+	top: 7.5px;
+}
+
+#contact:before{
+	content: url('../img/icons/mail2.png');
+	margin-right: 10px;
+	position: relative;
+	top: 7.5px;
+}
+
+#about:before{
+	content: url('../img/icons/pencil2.png');
+	margin-right: 10px;
+	position: relative;
+	top: 7.5px;
+}
+
+#blog:before{
+	content: url('../img/icons/notebook.png');
+	margin-right: 10px;
+	position: relative;
+	top: 7.5px;
 }
 
 /* Mise en place de la page projet type */
 
 section#projet {
-	margin: 30px auto;
-	width: 960px;
-	background-color: rgba(220, 220, 220, 1);
 	position: relative;
-	h2 {
-		font-family:"Lato Light", "Franklin Gothic Book";
-		font-size: 25px;
-		margin-top: 40px;
-		color: white;
-		background-color: $grisBleu;
-		width: 98%;
-		line-height: 60px;
-		@include single-box-shadow;
-		padding-left: 20px;
-	}
 	article.left{
 		margin-top: 40px;
 		margin-left: 20px;
