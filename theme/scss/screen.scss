@@ -1,7 +1,6 @@
 @import "compass";
 @import "colors";
 @import "compass/reset";
-@import "normalize";
 
 html{
 background: url('../img/brushed.png');
@@ -14,17 +13,18 @@ h1.cache {
 
 body {
 	width: 100%;
-	font-family: "Lato", "Helvetica Neue", "Arial", sans-serif;
+	font: 14px/1.5 "Lato", "Helvetica Neue", "Arial", "Franklin Gothic Book" sans-serif;
+	background-color: #dbd9a8;
 	position: relative;
 	section#trombino img {
+		width: 100%;
 		margin: 0 auto;
 		display: block;
+		z-index: 1000;
 	}
 	h2 {
-		color: $grisBleu;
-		font-family:"Lato Light", "Franklin Gothic Book";
 		font-size: 25px;
-		margin: 10px 0 20px 20px;
+		margin: 10px 0 0px 20px;
 		font-weight: bold;
 	}
 	a{
@@ -40,15 +40,14 @@ body {
 	position: absolute;
 	width: 412px;
 	height: 113px;
-	top: -16px;
 	left: 137px;
 }
 
 /* BARRE DE NAVIGATION */
 
 nav#menu {
-	margin-top: 40px;
-	background-color: $grisBleu;
+	background-color: #dbd9a8;
+	z-index: 900;
 	@include single-box-shadow;
 	ul {
 		padding-left: 600px;
@@ -62,9 +61,9 @@ nav#menu {
 	a {
 	text-decoration: none;
 	display: block;
-	color: $bleuLiens;
+	color: black;
 	text-transform: uppercase;
-	padding: 22px;
+	padding: 10px;
 		span.menu {
 			font-size: 12px;
 			text-transform: none;
@@ -74,44 +73,39 @@ nav#menu {
 	}
 	a:hover{
 		color: white;
-		background-color: $OrangeBoutons;
+		background-color: $bleuTeinte1;
 	}
 }
 
 /* SECTION PRINCIPALE */
 
 section#main {
-	margin: 30px auto;
-	/*width: 1000px;*/
-	background-color: rgba(220, 220, 220, 1);
 	h1 {
-		font-family:"Lato Light", "Franklin Gothic Book";
 		font-size: 25px;
-		margin: 40px 0 25px 0;
-		color: white;
-		background-color: $grisBleu;
+		color: black;
 		line-height: 60px;
-		@include single-box-shadow;
-		padding-left: 20px;
+		padding-left: 25px;
+		text-transform: uppercase;
 	}
 
 /* Accueil */
 
 	li {
-		padding: 20px 0;
-		margin: 25px 19px 0 19px;
-		width: 21%;
+		padding: 50px 0;
+		width: 25%;
 		display: inline;
-		color: $grisBleu;
+		color: white;
 		float: left;
-		@include border-radius(20px);
 		font-size: 18px;
 	}
 	.color1 {
-			background-color: rgba(255, 150, 0, 0.7);
-		}
+		background-color: $bleuTeinte1;
+	}
 	.color2 {
-		background-color: rgba(150, 150, 150, 1);
+		background-color: $bleuTeinte2;
+	}
+	.color3 {
+		background-color: $bleuTeinte3;
 	}
 	span.spanComp {
 		display: block;
@@ -205,6 +199,13 @@ section#main {
 	}
 }
 
+/* ICONS */
+#presentation:before{
+	content: url('../img/icons/profile.png');
+	position: relative;
+	top: 7px;
+}
+
 /* Mise en place de la page projet type */
 
 section#projet {
@@ -227,6 +228,7 @@ section#projet {
 		margin-top: 40px;
 		margin-left: 20px;
 		font-size: 20px;
+		float: left;
 		h2 {
 			font-size: 25px;
 			margin-bottom: 30px;
@@ -260,5 +262,5 @@ article.left:after,article.right:after,section#projet:after,section#main:after,s
 	clear: both;
 }
 
-
-@import "mediasQueries";
+/*
+@import "mediasQueries";*/
